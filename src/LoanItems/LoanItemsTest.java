@@ -36,7 +36,7 @@ public class LoanItemsTest {
             }
         }
 
-
+        System.out.println("LIST OF LOAN ITEMS\n ----------");
         for (LoanItems items : Loanitems){
             System.out.println(items);
         }
