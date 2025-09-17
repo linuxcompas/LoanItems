@@ -6,7 +6,7 @@ public class LoanItems {
     private String type;
 
 //constructor
-    public String LoanItems(String title, String type) {
+    LoanItems(String title, String type) {
         this.title = title;
         this.type = type;
 
