@@ -23,16 +23,18 @@ public class LoanItems {
         public void setTitle (String title) {this.title = title;}
         public void setType (String type) {this.type = type;}
 
+    public void title(){
+
+    }
 
     @Override
-    public String toString(String type, String title);
+    public String toString(String type, String title);{
         return title + " " + type;
 
 
         //Loan items
-        System.out.println("LIST OF LOAN ITEMS")
-        for (LoanItems item : type + title )
-        System.out.println(type + "    " + title);
-
-            }
-        }
+        System.out.println("LIST OF LOAN ITEMS");
+        for (LoanItems item : type + title)
+            System.out.println(type + "    " + title);
+    }
+}
