@@ -19,16 +19,27 @@ public class LoanItemsTest {
         LoanItems[] Loanitems = new LoanItems[numberOfLoanItems];
 
         for (int i = 0; i < numberOfLoanItems; i++){
-            System.out.println("Do you want to loan a book or video?: ");
+            System.out.println("Do you want to loan a book or video?: " + (i + 1) + ": ");
             String type = sc.nextLine();
-            System.out.println("What " + type + "do you want to loan?: ");
-            String name = sc.nextLine();
+
             if (type.equalsIgnoreCase("book")) {
-                Loanitems[i] = new Book(name,type);
+                System.out.println("What book do you want to loan?: " + (i + 1) + ": ");
+                String name = sc.nextLine();
+
+                Loanitems[i] = new Book(name, "");
             }
             else if (type.equalsIgnoreCase("video")){
-                Loanitems[i] = new Video(name, type);
+                System.out.println("What video do you want to loan?: ");
+                String name = sc.nextLine();
+
+                Loanitems[i] = new Video(name, "");
             }
         }
+
+
+        for (LoanItems items : Loanitems){
+            System.out.println(items);
+        }
+
     }
 }
