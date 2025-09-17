@@ -2,8 +2,8 @@ package LoanItems;
 
 //Attributes
 public class LoanItems {
-    private String title;
-    private String type;
+    String title;
+    String type;
 
     //constructor
     LoanItems(String title, String type) {
@@ -30,9 +30,6 @@ public class LoanItems {
         this.type = type;
     }
 
-    public void title() {
-
-    }
 
     @Override
     public String toString() {

@@ -3,16 +3,20 @@ package LoanItems;
 public class Video extends LoanItems {
 
     // superclass constructor
-    Video(String title, String type){
-        super(title, type); }
+    Video(String title, String type) {
+        super(title, type);
+    }
 
 
-        @Override
-        public void title() {
-            super.getTitle();
-        }
+    @Override
+    public String getTitle() {
+        super.getTitle();
+        return title;
+    }
 
-        public void type() {
-            super.getType();
+    @Override
+    public String getType() {
+        super.getType();
+        return type;
     }
 }

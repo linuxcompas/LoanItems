@@ -8,7 +8,7 @@ public class LoanItemsTest {
     }
 
     public static void loanItems() {
-        // opretter scanner "sc"
+        // Opretter scanner "sc"
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Welcome to the library");
@@ -20,6 +20,7 @@ public class LoanItemsTest {
         // Opretter Array til LoanItems
         LoanItems[] Loanitems = new LoanItems[numberOfLoanItems];
 
+        //
         for (int i = 0; i < numberOfLoanItems; i++) {
             System.out.println("Do you want to loan a book or video?: ");
             String type = sc.nextLine();

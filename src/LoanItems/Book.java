@@ -7,13 +7,15 @@ public class Book extends LoanItems {
         super(title, type);
     }
 
-
     @Override
-    public void title() {
+    public String getTitle() {
         super.getTitle();
+        return title;
     }
 
-    public void type() {
+    @Override
+    public String getType() {
         super.getType();
+        return type;
     }
 }
