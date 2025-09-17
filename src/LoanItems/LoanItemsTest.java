@@ -3,7 +3,7 @@ package LoanItems;
 import java.util.Scanner;
 
 public class LoanItemsTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         loanItems();
     }
 
@@ -20,11 +20,12 @@ public class LoanItemsTest {
         // Opretter Array til LoanItems
         LoanItems[] Loanitems = new LoanItems[numberOfLoanItems];
 
-        //
+        // Kørrer igennem loop for hver ting vi vil låne
         for (int i = 0; i < numberOfLoanItems; i++) {
             System.out.println("Do you want to loan a book or video?: ");
             String type = sc.nextLine();
 
+            // Tjekker om det er en bog eller video
             if (type.equalsIgnoreCase("book")) {
                 System.out.println("What book do you want to loan?: " + (i + 1) + ": ");
                 String name = sc.nextLine();
@@ -36,6 +37,7 @@ public class LoanItemsTest {
 
                 Loanitems[i] = new Video(name, "Video");
             }
+            // Uforventet input starter for loop forfra
             else {
                 System.out.println("Invalid Input! Try again");
                 i--;
@@ -43,9 +45,8 @@ public class LoanItemsTest {
         }
 
         System.out.println("LIST OF LOAN ITEMS\n ----------");
-        for (LoanItems items : Loanitems){
+        for (LoanItems items : Loanitems) {
             System.out.println(items);
         }
-
     }
 }
