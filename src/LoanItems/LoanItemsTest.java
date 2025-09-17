@@ -20,18 +20,19 @@ public class LoanItemsTest {
         // Opretter Array til LoanItems
         LoanItems[] Loanitems = new LoanItems[numberOfLoanItems];
 
-        //
+        //Vi vælger at benytte for & if statements.
         for (int i = 0; i < numberOfLoanItems; i++) {
             System.out.println("Do you want to loan a book or video?: ");
+            int c = 0;
             String type = sc.nextLine();
 
             if (type.equalsIgnoreCase("book")) {
-                System.out.println("What book do you want to loan?: " + (i + 1) + ": ");
+                System.out.println("What book do you want to loan?: " + (c + 1) + ": ");
                 String name = sc.nextLine();
 
                 Loanitems[i] = new Book(name, "Book");
             } else if (type.equalsIgnoreCase("video")) {
-                System.out.println("What video do you want to loan?: " + (i + 1) + ": ");
+                System.out.println("What video do you want to loan?: " + (c + 1) + ": ");
                 String name = sc.nextLine();
 
                 Loanitems[i] = new Video(name, "Video");
@@ -41,7 +42,7 @@ public class LoanItemsTest {
                 i--;
             }
         }
-
+        //Her har vi tilføjet vores output
         System.out.println("LIST OF LOAN ITEMS\n ----------");
         for (LoanItems items : Loanitems){
             System.out.println(items);
