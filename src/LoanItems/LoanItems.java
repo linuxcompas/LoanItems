@@ -21,7 +21,6 @@ public class LoanItems {
         return title;
     }
 //These are our setters
-
     public void setTitle(String title) {
         this.title = title;
     }
@@ -30,11 +29,10 @@ public class LoanItems {
         this.type = type;
     }
 
-
+    //Her har vi vores Override & toString metode
     @Override
     public String toString() {
         return getTitle() + " " + "(" + getType() + ")";
 
     }
 }
-     //Move method

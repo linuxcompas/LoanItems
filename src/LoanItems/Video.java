@@ -1,5 +1,5 @@
 package LoanItems;
-
+//dette er vores subklasse for videoer.
 public class Video extends LoanItems {
 
     // superclass constructor
@@ -7,7 +7,7 @@ public class Video extends LoanItems {
         super(title, type);
     }
 
-
+//Superclass Override
     @Override
     public String getTitle() {
         super.getTitle();
