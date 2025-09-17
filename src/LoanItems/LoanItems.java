@@ -1,18 +1,18 @@
 package LoanItems;
 
-//Attributes
+// Attributes
 public class LoanItems {
     String title;
     String type;
 
-    //constructor
+    // Constructor
     LoanItems(String title, String type) {
         this.title = title;
         this.type = type;
 
     }
 
-    //Here we have our getters
+    // Dette er vores getters
     public String getType() {
         return type;
     }
@@ -20,7 +20,7 @@ public class LoanItems {
     public String getTitle() {
         return title;
     }
-//These are our setters
+    // Dette er vores setters
     public void setTitle(String title) {
         this.title = title;
     }
